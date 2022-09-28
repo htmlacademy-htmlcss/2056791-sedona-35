@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Sergey Dashtamirov](https://up.htmlacademy.ru/htmlcss/35/user/2056791).
-* Наставник: `Неизвестно`.
+* Наставник: [Александр Карташов](https://htmlacademy.ru/profile/id77080).
 
 ---
 
