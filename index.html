@@ -11,11 +11,13 @@
       <nav class="navigation">
         <ul class="navigation-list"> <!--Создаём навигацию и именуем её-->
           <li class="navigation-item"> <!--Создаём навигационный предмет - блок-->
-            <a class="navigation-link navigation-logo" href="#"> <img src="#" alt="Логотип Сидоны"></a> <!--Создаём мини блок для логотипа и чтобы клиент мог по инерции переходить на главную-->
+            <a class="navigation-link navigation-logo" href="#">
+              <img src="#" alt="Логотип Сидоны">
+            </a> <!--Создаём мини блок для логотипа и чтобы клиент мог по инерции переходить на главную-->
 
           </li>
           <li class="navigation-item"> <!--Создаём мини блоки чтобы клиент понимал функционал-->
-            <a class="navigation-link" href="home.html">Главная</a>
+            <a class="navigation-link" href="index.html">Главная</a>
 
           </li>
           <li class="navigation-item"> <!--Создаём мини блоки чтобы клиент понимал функционал-->
@@ -48,7 +50,7 @@
 
           </li>
           <li class="navigation-item"> <!--Взаимодействие Клик ссылка-->
-            <a class="navigation-button buttol-all" href="#">Хочу сюда!</a> <!--Создаём псевдокнопку на самом деле ссылку-->
+            <a class="navigation-button" href="#">Хочу сюда!</a> <!--Создаём псевдокнопку на самом деле ссылку-->
           </li>
 
         </ul>
@@ -61,12 +63,20 @@
 
       <h1 class="visually-hidden">Город Седона</h1>
       <section class="hero">
-        <section class="hero">
-          <img class="hero-logo-text" src="" alt=" Логотип сайта" width="458" height="352"> <!--Нужно сгруппировать 3 вектро в svg -->
-          <img class="divider" src="" alt="Делает картинку красивой!" width="1200" height="57"> <!--Идёт разделение -->
-          <h2>Седона-небольшой городок в Аризоне,<br>
+        <img class="hero-logo-text" src="" alt=" Логотип сайта" width="458" height="352"> <!--Нужно сгруппировать 3 вектро в svg -->
+        <ul class="hero-list">
+          <li class="hero-item">
+            <h2 class="hero-title">Седона-небольшой городок в Аризоне,<br>
             заслуживающий большего!</h2>
-          <p>Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!</p>
+            <p class="hero-description">Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!</p>
+          </li>
+          <li class="hero-description">
+            <p>Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!</p>
+          </li>
+        </ul>
+
+
+
 
       </section>
 
@@ -80,7 +90,7 @@
         <ul class="advantages-list"> <!--Создаём список преимуществ-->
           <li class="advantages-item">
             <h3 class="advantages-title">Настоящий городок</h3>
-            <br> <!--Черта. В css просто возьмём br. Считаю что не нужно создавать специальный класс.-->
+
             <p class="advantages-description">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
 
           </li> <!--Создаём список преимуществ-->
@@ -93,7 +103,7 @@
         <ul class="advantages">
           <li class="advantages-item">
             <h3 class="advantages-title">Небольшая площадь</h3>
-            <br> <!--Черта. В css просто возьмём br. Считаю что не нужно создавать специальный класс.-->
+
             <p class="advantages-description">Все достопримечательности находятся очень близко</p>
 
           </li> <!--Создаём список преимуществ-->
@@ -101,7 +111,7 @@
           <li class="advantages-item">
             <h3 class="advantages-title">Красивая
               дорога</h3>
-            <br> <!--Черта. В css просто возьмём br. Считаю что не нужно создавать специальный класс.-->
+
             <p class="advantages-description">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
 
           </li> <!--Создаём список преимуществ-->
@@ -109,7 +119,7 @@
           <li class="advantages-item">
             <h3 class="advantages-title">Мало
               туристов</h3>
-            <br> <!--Черта. В css просто возьмём br. Считаю что не нужно создавать специальный класс.-->
+
             <p class="advantages-description">Большинство едет в Гранд Каньон и толпится там</p>
 
           </li> <!--Создаём список преимуществ-->
@@ -128,7 +138,7 @@
           <li class="advantages-item">
             <h3 class="advantages-title">Там есть
               мост дьявола</h3>
-            <br> <!--Черта. В css просто возьмём br. Считаю что не нужно создавать специальный класс.-->
+
             <p class="advantages-description">Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
 
           </li> <!--Создаём список преимуществ-->
@@ -206,7 +216,7 @@
     <footer class="page-footer">
       <section class="footer-social">
 
-        <ul class="footer-social-list">
+        <ul class="footer-social-link">
           <li class="footer-social-item">
             <a class="button" href="#">
               <span class="visually-hidden">Вконтакте</span>
@@ -223,7 +233,7 @@
             </a>
           </li>
         </ul>
-        <p class="about-text">Сделано в <a class="htmlacademy-link" href="https://htmlacademy.ru/">.html academy</a></p>
+
       </section>
 
       <section class="footer-contacts">
@@ -235,7 +245,7 @@
 
       </section>
 
-      <section class="footer-logo">
+      <section class="footer-copyright">
         <a class="footer-logo" href="#"><img class="footer-logo-html" src="" alt="Фотография htmlacademy"></a>
 
 
