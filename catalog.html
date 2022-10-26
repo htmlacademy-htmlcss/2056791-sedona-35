@@ -48,35 +48,21 @@
     <main class="main-inner" data-test="catalog">
       <header class="inner-header">
         <h1 class="inner-header-title">Гостиницы Седоны</h1>
-        <ul class="filter-list">
-          <li class="filter-item">
-            <a class="filter-image-item" href="#">
-              <img class="filter-home" href="#" alt="Отправляет на главную страницу">
-            </a>
-            <a class="filter-arrow">
-              <img class="filter-image-arrow" href="#" alt="Указывает на действующую страницу">
+        <ol class="inner-header-list">
+          <li class="inner-header-item">
+            <a class="inner-header-image-item" href="#">
+              <span class="visually-hidden">Главная</span>
             </a>
           </li>
 
           <li>
             <a class="filter-hostels" href="#">Гостиницы</a>
           </li>
-        </ul>
+        </ol>
 
       </header>
       <section class="filter-content" data-test=" filter">
-        <h1 class="filter-title">Гостиницы Седоны</h1>
-        <ul class="filter-list">
-          <li class="filter-item">
-            <a class="filter-image-item" href="#">
-              <img class="filter-home" href="#" alt="Отправляет на главную страницу">
-            </a>
-            <a class="filter-arrow">
-              <img class="filter-image-arrow" href="#" alt="Указывает на действующую страницу">
-            </a>
-            <a class="filter-hostels" href="#">Гостиницы</a>
-          </li>
-        </ul>
+        <h1 class="visually-hidden">Фильтры</h1>
 
         <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
 
@@ -143,13 +129,19 @@
             </fieldset>
             <fieldset class="catalog-filter-group-right">
               <legend class="catalog-filter-title">Стоимость, ₽:</legend>
+              <label class="catalog-filter-group-price">
+                От
+                <input class="group-price-item" type="text" name="catalog-price-minimum" placeholder="0">
+                До
+                <input class="group-price-item" type="text" name="catalog-price-maximum" placeholder="9000">
+              </label>
+              <button class="button button-price-minimum" type="submit">Управление нижней границей стоимости</button>
+              <button class="button button-price-maximum" type="submit">Управление верхней границей стоимости</button>
 
 
-
-              <button class="button button-apply" type="submit">Применить</button>
-              <br>
-              <button class="button button-reset" type="submit">Сбросить</button> <!--Тут я заглох-->
             </fieldset>
+            <button class="button button-apply" type="submit">Применить</button>
+            <button class="button button-reset" type="submit">Сбросить</button>
 
 
 
@@ -163,36 +155,36 @@
       </section>
 
       <section class="catalog" data-test="catalog">
+        <h1 class="sorting-search">Найдено гостиниц: 38</h1>
+        <select class="select-control" aria-label="Сортировка">
+          <option value="popular">Сначала популярное</option>
+          <option value="cheap">Сначала дешёвое</option>
+          <option value="expensive">Сначала дорогое</option>
+        </select>
         <ul class="sorting-list">
           <li class="sorting-item">
-            <p class="sorting-search">Найдено гостиниц: 38</p>
-            <select class="select-control" aria-label="Сортировка">
-              <option value="popular">Сначала популярное</option>
-              <option value="cheap">Сначала дешёвое</option>
-              <option value="expensive">Сначала дорогое</option>
-            </select>
+            <a class="button button-light" href="#">
+              <span class="visually-hidden">Показать плиткой</span>
+            </a>
           </li>
           <li class="sorting-item">
             <a href="#" class="button button-light">
-              <span class="visually-hidden">Показать карточки</span>
+              <span class="visually-hidden">Показать карточками</span>
             </a>
-            <a class="button button-light" href="#">
-              <span class="visually-hidden">Разложить карту</span>
-            </a>
-            <a class="button button-light" href="#">
-              <span class="visually-hidden">Показать список</span>
           </li>
 
-
+          <li class="sorting-item">
+            <a class="button button-light" href="#">
+              <span class="visually-hidden">Показать списком</span>
+            </a>
+          </li>
         </ul>
       </section>
-
-
 
       <ul class="product-list">
         <li class="product-card">
           <a class="product-card-link" href="product.html">
-            <img class="product-card-image" src="" alt="">
+            <img class="product-card-image" src="" alt="Звёздное небо в расщелине гор.">
             <h3 class="product-card-title">Amara Resort & Spa</h3>
           </a>
           <div class="product-card-item">
@@ -208,7 +200,7 @@
         </li>
         <li class="product-card">
           <a class="product-card-link" href="#">
-            <img class="product-card-image" src="" alt="">
+            <img class="product-card-image" src="" alt="Радуга над горным хребтом.">
             <h3 class="product-card-title">Villas at Poco Diablo</h3>
           </a>
           <div class="product-card-item">
@@ -224,7 +216,7 @@
         </li>
         <li class="product-card">
           <a class="product-card-link" href="#">
-            <img class="product-card-image" src="" alt="">
+            <img class="product-card-image" src="" alt="Горы на фоне голубого неба.">
             <h3 class="product-card-title">Desert Quail Inn</h3>
           </a>
           <div class="product-card-item">
@@ -242,7 +234,7 @@
       <ul class="product-list">
         <li class="product-card">
           <a class="product-card-link" href="product.html">
-            <img class="product-card-image" src="" alt="">
+            <img class="product-card-image" src="" alt="Гора на фоне звёздного неба.">
             <h3 class="product-card-title">GreenTree Inn</h3>
           </a>
           <div class="product-card-item">
@@ -284,6 +276,17 @@
 
 
 
+      <section class="newsletter" data-test="subscribe">
+        <h2 class="newsletter-title">Подпишитесь на рассылку</h2>
+        <p class="newsletter-description">Только полезная информация и никакого спама, честное бойскаутское!</p>
+        <form class="newsletter-form" action="https://echo.htmlacademy.ru/" method="post">
+            <label for="newsletter-email">Ваш e-mail</label>
+            <input class="field"  placeholder="Ваш e-mail" type="email" name="newsletter-email" id="newsletter-email" required>
+            <br>
+            <br><button class="newsletter-button" type="submit"> Подписаться
+            </button>
+          </form>
+        </section>
 
 
 
