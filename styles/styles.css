@@ -328,3 +328,81 @@ fieldset {
   color: #242424;
   border: 2px solid #E5E5E5;
 }
+
+.product-card {
+  background-color: #FFFFFF;
+}
+
+.product-card-link {
+  text-decoration: none;
+}
+
+.product-card-title {
+  font-weight: 700;
+  font-style: 24px;
+  line-height: 28px;
+}
+
+.product-card-item {
+  font-weight: 400;
+  color: #333333;
+}
+
+.product-card-info-link {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  text-decoration: none;
+  color:#FFFFFF;
+  background-color: #756157;
+}
+
+.product-card-favourite-button {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  color: #FFFFFF;
+  background-color: #82B3D3;
+}
+
+.product-card-rating-description {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: #333333;
+  background-color: #F2F2F2;
+}
+
+
+
+
+/* Пагинатор */
+
+.paginator {
+  background-color: #FFFFFF;
+}
+
+.pagination-link {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 36px;
+  text-align: center;
+  color: #000000;
+  background-color: #82B3D3;
+  text-decoration: none;
+
+}
+
+.pagination-current {
+  color:#000000;
+  background-color: #F2F2F2;
+}
+
+.button {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  color: #FFFFFF;
+  text-transform: uppercase;
+
+}
