@@ -245,3 +245,86 @@ body {
   color:#000000;
   background-color: #FFFFFF;
 }
+
+/* Каталог */
+
+.main-inner {
+  font-family: "PT Sans", sans-serif;
+  color:#ffffff;
+  background-color: #000000;
+  font-size: 18px;
+  line-height: 21px;
+}
+
+.inner-header {
+  background-image: url("../images/catalog/hostels-photo.jpg");
+  background-repeat: no-repeat;
+}
+
+.inner-header-title {
+  font-size: 60px;
+  line-height: 78px;
+  font-weight: 700;
+  color: inherit;
+}
+.breadcrumbs-link {
+  font-family: "PT Sans", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 21px;
+  color: inherit;
+  text-decoration: none;
+}
+
+.catalog-filter-title {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  color: inherit;
+}
+
+.control-input {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 23px;
+  color: inherit;
+}
+
+fieldset {
+  border: none;
+}
+
+.button-apply {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  background-color: #82B3D3;
+}
+
+.button-reset {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  background: none;
+}
+
+.sorting-search {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  color: #FFFFFF;
+}
+
+.sorting-control {
+  font-weight: 400;
+  color: #333333;
+}
+
+.button-light {
+  color: #242424;
+  border: 2px solid #E5E5E5;
+}
